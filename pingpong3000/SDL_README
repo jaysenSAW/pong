@@ -1,0 +1,32 @@
+les packages a installer sous unbuntu 14.04 sont	
+
+libsdl-2-2.0-0
+libsdl2-dev
+
+pour installer ces packages (ou d'autres) avec toutes leurs dependances, 
+le plus simple est de :
+
+(1) installer le "synaptic package manager" via le "ubuntu software 
+    center"
+(2) dans synaptic, chercher le nom de ces packages dans la fenetre
+    de recherche, les cocher dans la fenetre centrale, puis demander 
+    "appliquer les modifications" via la barre d'outils.
+
+la documentation de SDL se trouve ici :
+
+http://wiki.libsdl.org/FrontPage
+
+la compilation d'un code-source utilisant SDL (ici, le fichier 
+d'exemple) peut se faire via :
+
+gcc -o sdl_exemple sdl_exemple.c `sdl2-config --cflags --libs`
+
+Cette commande peut aussi etre placee dans un fichier portant 
+par exemple le nom "compilation.sh", et executee en ecrivant
+dans le shell :
+
+sh compilation.sh
+
+
+
+
